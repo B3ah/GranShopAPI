@@ -9,7 +9,8 @@ namespace GranShopAPI.Models
         [Key]
         public int Id { get; set; }
 
-        public int CateogriaId { get; set; }
+        [Required]
+        public int CategoriaId { get; set; }
         [ForeignKey("CategoriaId")]
         public Categoria Categoria { get; set; }
 
